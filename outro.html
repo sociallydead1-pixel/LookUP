@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =====================================================
+         EDIT THE PAGE TITLE HERE
+         ===================================================== -->
+    <title>The End of the Journey</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page-outro">
+
+    <!-- Background canvas for animated stars -->
+    <canvas id="bg-canvas"></canvas>
+
+    <main class="outro-container">
+
+      <!-- Decorative constellation icon -->
+      <div class="outro-icon" aria-hidden="true">✦ ✧ ✦</div>
+
+      <!-- =====================================================
+           ✏️  EDIT: Change the main outro title here
+           ===================================================== -->
+      <h1 class="outro-title">Knew you could find it</h1>
+
+      <!-- =====================================================
+           ✏️  EDIT: Change the closing message here.
+           You can write as much or as little as you like.
+           Separate paragraphs with a blank line inside the tag.
+           ===================================================== -->
+      <div class="outro-message">
+        <p>
+          Not every star shines the brightest.
+          Some are simply the ones worth remembering.
+        </p>
+        <p>
+         just wanted to say thank you for being there for me, I really appreciate you.
+        </p>
+        <!-- ✏️  EDIT: Sign off here — replace with your name, a quote, or anything -->
+        <p class="outro-signature">— WildCat ✦</p>
+      </div>
+
+      <!-- =====================================================
+           ✏️  EDIT: Change the button text here
+           ===================================================== -->
+      <a href="./index.html" class="intro-btn outro-btn">
+        <span class="btn-text">look back up</span>
+        <span class="btn-sparkle">✦</span>
+      </a>
+
+    </main>
+
+    <!-- =====================================================
+         BACKGROUND MUSIC (same audio file as intro/outro)
+         ===================================================== -->
+    <audio id="bg-music" loop preload="auto">
+      <source src="./audio/ambient.mpeg" type="audio/mpeg" />
+    </audio>
+
+    <!-- Music toggle button -->
+    <button class="music-toggle" id="music-toggle" aria-label="Toggle music" title="Play / Pause music">
+      <span class="music-icon-play">♪</span>
+      <span class="music-icon-pause">⏸</span>
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

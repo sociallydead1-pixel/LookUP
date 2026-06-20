@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =====================================================
+         EDIT THE PAGE TITLE HERE
+         ===================================================== -->
+    <title>Our Constellation</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page-stars">
+
+    <!-- The sky canvas (draws background stars + constellation lines) -->
+    <canvas id="sky-canvas"></canvas>
+
+    <!-- =====================================================
+         SCROLL HINT (shown at top of the sky page)
+         ✏️  EDIT: Change this hint text if you like
+         ===================================================== -->
+    <div class="scroll-hint" id="scroll-hint">
+      <span class="scroll-hint-icon">↓</span>
+      <span>Scroll to explore the sky &nbsp;·&nbsp; Click a star to remember</span>
+    </div>
+
+    <!-- =====================================================
+         THE STAR FIELD
+         Stars are created by JavaScript from the STARS array
+         in script.js. Edit positions and memories there.
+         ===================================================== -->
+    <div class="star-field" id="star-field">
+      <!-- Stars are injected here by script.js -->
+    </div>
+
+    <!-- =====================================================
+         MEMORY MODAL
+         This card opens when a star is clicked.
+         You do not need to edit this HTML — the content is
+         filled in automatically from the STARS data in script.js
+         ===================================================== -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+      <div class="modal-card" id="modal-card">
+        <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+        <div class="modal-star-name" id="modal-star-name"></div>
+        <div class="modal-body">
+          <h2 class="modal-title" id="modal-title"></h2>
+          <p class="modal-text" id="modal-text"></p>
+          <div class="modal-image-wrap" id="modal-image-wrap">
+            <img class="modal-image" id="modal-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         BACKGROUND MUSIC (same audio file as intro/outro)
+         Edit the src in index.html — this element just carries
+         it across so the button works on all pages.
+         ===================================================== -->
+    <audio id="bg-music" loop preload="auto">
+      <source src="./audio/ambient.mpeg" type="audio/mpeg" />
+    </audio>
+
+    <!-- Music toggle button -->
+    <button class="music-toggle" id="music-toggle" aria-label="Toggle music" title="Play / Pause music">
+      <span class="music-icon-play">♪</span>
+      <span class="music-icon-pause">⏸</span>
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
