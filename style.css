@@ -1,10 +1,4 @@
-/* ============================================================
-   CONSTELLATION GIFT — style.css
-   ============================================================
-   You don't need to edit this file unless you want to change
-   colors, fonts, or layout. All editable content is in the
-   HTML files and in the STARS section of script.js.
-   ============================================================ */
+
 
 /* ---------- RESET & BASE ---------- */
 *, *::before, *::after {
@@ -35,9 +29,6 @@ body.page-fade-out {
 }
 
 :root {
-  /* =====================================================
-     ✏️  EDIT COLORS HERE if you want to change the palette
-     ===================================================== */
   --bg-deep:    #04040f;
   --bg-mid:     #080818;
   --star-white: #e8e8ff;
@@ -49,9 +40,6 @@ body.page-fade-out {
   --card-bg:    rgba(10, 8, 30, 0.88);
   --card-border: rgba(196, 170, 255, 0.18);
 
-  /* =====================================================
-     ✏️  EDIT FONTS HERE (must match Google Fonts link in HTML)
-     ===================================================== */
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'EB Garamond', Georgia, serif;
 }
